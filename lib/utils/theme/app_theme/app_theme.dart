@@ -10,12 +10,13 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.bgColor,
       actionIconTheme: ActionIconThemeData(
         backButtonIconBuilder: (context) {
-          return Icon(Icons.arrow_back_ios);
+          return Icon(Icons.arrow_back_sharp, color: AppColors.iconTextColor);
         },
         closeButtonIconBuilder: (context) {
-          return Icon(Icons.close);
+          return Icon(Icons.close, color: AppColors.iconTextColor);
         },
       ),
+
       useMaterial3: true,
       dialogTheme: DialogThemeData(
         backgroundColor: AppColors.white,
@@ -30,6 +31,7 @@ class AppTheme {
       appBarTheme: AppBarTheme(
         backgroundColor: AppColors.bgColor,
         toolbarHeight: 0.h,
+        surfaceTintColor: AppColors.bgColor,
       ),
     );
   }
